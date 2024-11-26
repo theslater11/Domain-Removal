@@ -27,8 +27,6 @@ def remove_domain(email: list[str]) -> list[str]:
             print(-1)
     email = domainless
     return email
-mailer = ["js@gmail.com", "kn@yahoo.com", "mail"]
-print(remove_domain(mailer))
 #This line will permanently modify the original list with updated values
 '''
 COLLECTED LIST VARIABLE = domainless
