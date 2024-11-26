@@ -24,9 +24,15 @@ def remove_domain(email: list[str]) -> list[str]:
         else:
             bad_domain.append(domain)
             print(-1)
-    return domainless
+    email = domainless
+    return email
+
 #This line will modify the original list with updated values
 '''
-ORIGINAL LIST VARIABLE = domainless
+COLLECTED LIST VARIABLE = domainless
 '''
-#This line counts the number of bad domains and returns the 
+#This line gives you the number of valid emails collected.
+'''
+valid_addresses = len(COLLECTED LIST VARIABLE) - len(bad_domain)
+print(valid_addresses)
+'''
