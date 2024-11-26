@@ -23,16 +23,13 @@ def remove_domain(email: list[str]) -> list[str]:
             domainless.append(half_domain[0])
         else:
             bad_domain.append(domain)
+            email.remove(domain)
             print(-1)
     email = domainless
     return email
-
-#This line will modify the original list with updated values
+mailer = ["js@gmail.com", "kn@yahoo.com", "mail"]
+print(remove_domain(mailer))
+#This line will permanently modify the original list with updated values
 '''
 COLLECTED LIST VARIABLE = domainless
-'''
-#This line gives you the number of valid emails collected.
-'''
-valid_addresses = len(COLLECTED LIST VARIABLE) - len(bad_domain)
-print(valid_addresses)
 '''
